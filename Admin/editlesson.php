@@ -39,7 +39,7 @@ include('../dbConnection.php');
   }
  ?>
 <div class="col-sm-6 mt-5  mx-3 jumbotron">
-  <h3 class="text-center">Update Lesson Details</h3>
+  <h3 class="text-center">Update Event Details</h3>
   <?php
  if(isset($_REQUEST['view'])){
   $sql = "SELECT * FROM lesson WHERE lesson_id = {$_REQUEST['id']}";
@@ -49,28 +49,28 @@ include('../dbConnection.php');
  ?>
   <form action="" method="POST" enctype="multipart/form-data">
     <div class="form-group">
-      <label for="lesson_id">Lesson ID</label>
+      <label for="lesson_id">Event ID</label>
       <input type="text" class="form-control" id="lesson_id" name="lesson_id" value="<?php if(isset($row['lesson_id'])) {echo $row['lesson_id']; }?>" readonly>
     </div>
     <div class="form-group">
-      <label for="lesson_name">Lesson Name</label>
+      <label for="lesson_name">Event Name</label>
       <input type="text" class="form-control" id="lesson_name" name="lesson_name" value="<?php if(isset($row['lesson_name'])) {echo $row['lesson_name']; }?>">
     </div>
 
     <div class="form-group">
-      <label for="lesson_desc">Lesson Description</label>
+      <label for="lesson_desc">Event Description</label>
       <textarea class="form-control" id="lesson_desc" name="lesson_desc" row=2><?php if(isset($row['lesson_desc'])) {echo $row['lesson_desc']; }?></textarea>
     </div>
     <div class="form-group">
-      <label for="course_id">Course ID</label>
+      <label for="course_id">Event ID</label>
       <input type="text" class="form-control" id="course_id" name="course_id" value="<?php if(isset($row['course_id'])) {echo $row['course_id']; }?>" readonly>
     </div>
     <div class="form-group">
-      <label for="course_name">Course Name</label>
+      <label for="course_name">Event Name</label>
       <input type="text" class="form-control" id="course_name" name="course_name" onkeypress="isInputNumber(event)" value="<?php if(isset($row['course_name'])) {echo $row['course_name']; }?>" readonly>
     </div>
     <div class="form-group">
-      <label for="lesson_link">Lesson Link</label>
+      <label for="lesson_link">Event Link</label>
       <div class="embed-responsive embed-responsive-16by9">
        <iframe class="embed-responsive-item" src="<?php if(isset($row['lesson_link'])) {echo $row['lesson_link']; }?>" allowfullscreen></iframe>
       </div>     

@@ -16,7 +16,7 @@ include('../dbConnection.php');
   // Checking for Empty Fields
   if(($_REQUEST['stu_name'] == "") || ($_REQUEST['stu_email'] == "") || ($_REQUEST['stu_pass'] == "") || ($_REQUEST['stu_occ'] == "")){
    // msg displayed if required field missing
-   $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fileds </div>';
+   $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fields </div>';
   } else {
    // Assigning User Values to Variable
    $stu_name = $_REQUEST['stu_name'];
@@ -27,10 +27,10 @@ include('../dbConnection.php');
     $sql = "INSERT INTO student (stu_name, stu_email, stu_pass, stu_occ) VALUES ('$stu_name', '$stu_email', '$stu_pass', '$stu_occ')";
     if($conn->query($sql) == TRUE){
      // below msg display on form submit success
-     $msg = '<div class="alert alert-success col-sm-6 ml-5 mt-2" role="alert"> Student Added Successfully </div>';
+     $msg = '<div class="alert alert-success col-sm-6 ml-5 mt-2" role="alert"> Participant Added Successfully </div>';
     } else {
      // below msg display on form submit failed
-     $msg = '<div class="alert alert-danger col-sm-6 ml-5 mt-2" role="alert"> Unable to Add Student </div>';
+     $msg = '<div class="alert alert-danger col-sm-6 ml-5 mt-2" role="alert"> Unable to Add Participant </div>';
     }
   }
   }

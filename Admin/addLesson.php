@@ -16,7 +16,7 @@ include('../dbConnection.php');
   // Checking for Empty Fields
   if(($_REQUEST['lesson_name'] == "") || ($_REQUEST['lesson_desc'] == "") || ($_REQUEST['course_id'] == "") || ($_REQUEST['course_name'] == "")){
    // msg displayed if required field missing
-   $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fileds </div>';
+   $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert"> Fill All Fields </div>';
   } else {
    // Assigning User Values to Variable
    $lesson_name = $_REQUEST['lesson_name'];
@@ -30,10 +30,10 @@ include('../dbConnection.php');
     $sql = "INSERT INTO lesson (lesson_name, lesson_desc, lesson_link, course_id, course_name) VALUES ('$lesson_name', '$lesson_desc','$link_folder', '$course_id', '$course_name')";
     if($conn->query($sql) == TRUE){
      // below msg display on form submit success
-     $msg = '<div class="alert alert-success col-sm-6 ml-5 mt-2" role="alert"> Lesson Added Successfully </div>';
+     $msg = '<div class="alert alert-success col-sm-6 ml-5 mt-2" role="alert"> Event Added Successfully </div>';
     } else {
      // below msg display on form submit failed
-     $msg = '<div class="alert alert-danger col-sm-6 ml-5 mt-2" role="alert"> Unable to Add Lesson </div>';
+     $msg = '<div class="alert alert-danger col-sm-6 ml-5 mt-2" role="alert"> Unable to Add Event </div>';
     }
   }
   }
