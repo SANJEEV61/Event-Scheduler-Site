@@ -59,7 +59,7 @@ Link to the website: https://eventschedulersite.000webhostapp.com/index.php
 
 Teammates:
 Sanjeev R 1BO19CS093,
-Sarvesh Sutej Labhe 1BO19CS095,
+Sarvesh Sutej Labdhe 1BO19CS095,
 Sneha R 1BO19CS099,
 K Suraj 1BO19CS107,
 Syeed Maaz 1BO19CS110.
