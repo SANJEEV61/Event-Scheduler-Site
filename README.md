@@ -42,7 +42,7 @@ step 7: Now type localhost/eventschdulersite(folder name) in your favourite web 
 
 
 
-NOTE: Since this a dynamic website(backend invloved), it may not work with Github live link.
+NOTE: Since this a dynamic website(backend involved), it may not work with Github live link.
 
 This website has been hosted on a platform called https://in.000webhost.com/ which supports dynamic hosting of PHP website with database.
 
