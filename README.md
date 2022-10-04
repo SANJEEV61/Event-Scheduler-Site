@@ -34,7 +34,7 @@ Step 4: Open XAMPP Control Panel. Start the Apache and MYSQL modules. After star
 
 Step 5: Click on new and create a new Database. In our case database name is "lms_db".
 
-Step 6: Once Database is created successfully, click on import. Import the database which resides in SQL folder of the downloaded souce code.
+Step 6: Once Database is created successfully, click on import. Import the database which resides in SQL folder of the downloaded source code.
 
 step 7: Now type localhost/eventschdulersite(folder name) in your favourite web browser. A localhost(127.0.0.1) for your system will be created which runs the 
         PHP code efficiently with fully functional database.
